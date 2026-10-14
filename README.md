@@ -95,6 +95,6 @@ Helps forest agencies, NGOs, researchers and local communities monitor ecosystem
 
 **Team Lead:** Astha Raut ([GitHub](https://github.com/AsthaRaut))
 **Members:** Nishu Kumari, Swati Wadekar, Prathibha Maurya
-**Institution:** Navgurukul
+
 
 Repository: [VanRakshak-AI](https://github.com/AsthaRaut/VanRakshak-AI)
