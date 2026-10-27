@@ -1,72 +1,104 @@
-<h1 align="center">VanRakshak-AI 🌿</h1>
+# 🌿 VanRakshak-AI
+### AI-Powered Forest Monitoring and Restoration Prioritisation Platform
 
 <p align="center">
-  <b>AI-powered forest monitoring and restoration prioritisation platform</b>
-</p>
-
-<p align="center">
-  <a href="https://vanrakshak-ai.lovable.app/">
-    <img src="https://img.shields.io/badge/🌐_Live_Demo-Open_Website-2e7d32?style=for-the-badge" alt="Live Demo" />
+  <a href="https://vanrakshak-ai-1.onrender.com">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit%20Website-2E7D32?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" />
   </a>
+  <a href="https://github.com/AsthaRaut/VanRakshak-AI">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository" />
+  </a>
+  <img src="https://img.shields.io/badge/Language-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
 </p>
 
-<p align="center">
-  🔗 <a href="https://vanrakshak-ai.lovable.app/">https://vanrakshak-ai.lovable.app/</a>
-</p>
+## Overview
 
----
+**VanRakshak-AI** is a web platform that helps identify degraded forest areas, visualise environmental indicators, and support data-informed restoration planning. It brings forest indicators, map-based visualisation, and community observations together in one place.
 
-VanRakshak-AI turns scattered forest data into one clear, location-based map of restoration priority. It combines satellite and environmental indicators with community reports to show which degraded areas need action first.
+Developed by **Team TeraPlus** for the **Code4Nature Challenge**.
 
-Built by **Team TeraPlus** for the **Code4Nature Challenge**.
+## Problem Statement
 
-## ❗ Problem
+Forest conservation depends on timely information, yet:
 
-Forests are large and constantly changing, so regular monitoring is difficult. Data is also scattered across satellite feeds, field notes and local reports, which makes it hard to decide where restoration should begin.
+- Large forest areas are difficult to monitor.
+- Environmental data is scattered across multiple sources.
+- Identifying restoration priorities requires analysing several indicators together.
+- Local observations rarely reach decision-makers.
 
-## 💡 Solution
+## Solution
 
-1. **Collect** – Gather vegetation, fire and habitat indicators together with community reports.
-2. **Analyse** – Score each location for degradation and risk using an AI-based model.
-3. **Prioritise** – Show every location on an interactive map, colour-coded by restoration urgency.
+| Step | Action | Description |
+|---|---|---|
+| 1 | **Monitor** | Explore vegetation, fire-impact, and habitat indicators. |
+| 2 | **Visualise** | View forest information on an interactive map. |
+| 3 | **Analyse** | Assess indicators to understand degradation and restoration needs. |
+| 4 | **Prioritise** | Rank locations by restoration urgency. |
+| 5 | **Track** | Follow recovery progress over time. |
 
-## ✨ Features
+## Key Features
 
-- **Forest Monitoring** – Track vegetation condition, fire impact and habitat degradation.
-- **GIS Map** – View forest condition, reported issues and priority areas in one place.
-- **AI Analysis** – Rank locations from "urgent restoration" to "stable".
-- **Community Reporting** – Submit location-based observations and biodiversity concerns.
-- **Restoration Insights** – Turn monitoring results into practical planning inputs.
-- **Recovery Progress Index (RPI)** – Track whether a restored area is recovering, stable or declining.
+- 🌳 **Forest Monitoring:** Indicators for vegetation, fire impact, and habitat condition.
+- 🗺️ **Interactive GIS Map:** Location-based forest information on a Leaflet map.
+- 🤖 **Restoration Prioritisation:** AI-assisted ranking of locations by restoration need.
+- 📍 **Community Reporting:** Location-based records of environmental and biodiversity observations.
+- 📊 **Restoration Insights:** Clear charts and summaries to support planning.
+- 🌱 **Recovery Progress Index (RPI):** Shows whether an area is recovering, stable, or declining.
 
-> The prototype uses representative sample data. Real satellite and environmental datasets will be integrated as the project matures.
+## How It Works
 
-## 🛠️ Tech Stack
+```text
+Environmental Indicators + Community Observations
+                    ↓
+            Data Organisation
+                    ↓
+        Forest Condition Assessment
+                    ↓
+         Restoration Prioritisation
+                    ↓
+          Interactive Map & Insights
+```
 
-React · TypeScript · Vite · CSS · Bun / npm
+## Technology Stack
 
-## 🚀 Run Locally
+| Technology | Purpose |
+|---|---|
+| React, TypeScript | User interface and type-safe development |
+| TanStack Start | Routing and server-side framework |
+| Vite, Nitro | Build tooling and production server |
+| Tailwind CSS | Styling and responsive layouts |
+| Leaflet | Interactive maps |
+| Recharts | Charts and data visualisation |
+| Node.js, npm | Runtime and package management |
 
-**Prerequisites:** Node.js with npm, or Bun.
+## Getting Started
+
+**Prerequisites:** Node.js, npm, and Git.
 
 ```bash
-# 1. Clone the repository
+# Clone the repository
 git clone https://github.com/AsthaRaut/VanRakshak-AI.git
 cd VanRakshak-AI
 
-# 2. Install dependencies
-npm install        # or: bun install
+# Install dependencies
+npm install
 
-# 3. Start the development server
-npm run dev        # or: bun run dev
-
-# 4. Create a production build (output in /dist)
-npm run build      # or: bun run build
+# Start the development server
+npm run dev
 ```
 
-## 📁 Project Structure
+**Production build**
 
+```bash
+NITRO_PRESET=node-server npm run build
+node .output/server/index.mjs
 ```
+
+The build is generated in the `.output/` directory. Open the address reported by the server.
+
+## Project Structure
+
+```text
 VanRakshak-AI/
 ├── public/
 ├── src/
@@ -80,17 +112,31 @@ VanRakshak-AI/
 │   └── styles.css
 ├── package.json
 ├── vite.config.ts
-└── README.md
+└── tsconfig.json
 ```
 
-## 🎯 Impact
+## Future Scope
 
-Helps forest agencies, NGOs, researchers and local communities monitor ecosystem change, focus restoration where it is needed most, and make local biodiversity concerns visible.
+- Integrate satellite imagery and verified environmental datasets.
+- Develop and validate AI/ML models for degradation assessment.
+- Add historical forest-cover analysis and change detection.
+- Verify community observations and improve biodiversity reporting.
+- Introduce field-based restoration monitoring.
+- Collaborate with conservation organisations and researchers.
 
-## 👥 Team TeraPlus
+## Limitations
 
-**Team Lead:** Astha Raut ([GitHub](https://github.com/AsthaRaut))
-**Members:** Nishu Kumari, Swati Wadekar, Prathibha Maurya
+The current prototype uses representative sample data. Restoration priorities and recovery indicators are demonstrative only and should not replace expert field assessments until supported by verified data and validated models.
 
+## Team TeraPlus
 
-Repository: [VanRakshak-AI](https://github.com/AsthaRaut/VanRakshak-AI)
+- **Astha Raut** (Team Lead)
+- Nishu Kumari
+- Swati Wadekar
+- Prathibha Maurya
+
+**Institution:** Navgurukul | **Challenge:** Code4Nature
+
+---
+
+<p align="center">🌿 <b>Protect Forests. Prioritise Restoration. Support Biodiversity.</b></p>
