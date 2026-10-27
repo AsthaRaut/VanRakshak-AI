@@ -128,14 +128,7 @@ VanRakshak-AI/
 
 The current prototype uses representative sample data. Restoration priorities and recovery indicators are demonstrative only and should not replace expert field assessments until supported by verified data and validated models.
 
-## Team TeraPlus
-
-- **Astha Raut** (Team Lead)
-- Nishu Kumari
-- Swati Wadekar
-- Prathibha Maurya
-
-**Institution:** Navgurukul | **Challenge:** Code4Nature
+**Team :** TeraPlus | **Challenge:** Code4Nature
 
 ---
 
